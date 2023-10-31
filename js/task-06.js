@@ -1,6 +1,6 @@
 const inputRef = document.querySelector("#validation-input");
 
-const borderColorInput = (event) => {
+const onBorderColorInput = (event) => {
   if (Number(inputRef.dataset.length) === Number(inputRef.value.length)) {
     inputRef.classList.remove("invalid");
     inputRef.classList.add("valid");
@@ -10,4 +10,4 @@ const borderColorInput = (event) => {
   }
 };
 
-inputRef.addEventListener("blur", borderColorInput);
+inputRef.addEventListener("blur", onBorderColorInput);

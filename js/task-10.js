@@ -10,7 +10,7 @@ const createBtn = document.querySelector("button[data-create]");
 const destroyBtn = document.querySelector("button[data-destroy]");
 const boxesEl = document.querySelector("#boxes");
 
-const getAmount = () => {
+const onButtonCreateClick = () => {
   // const amountEl = numberEl.value;
   createBoxes(numberEl.value);
 };
@@ -34,8 +34,8 @@ const createBoxes = (amount) => {
 
 const destroyBoxes = () => {
   boxesEl.innerHTML = "";
-  numberEl.value = "";
+  // numberEl.value = "";
 };
 
-createBtn.addEventListener("click", getAmount);
+createBtn.addEventListener("click", onButtonCreateClick);
 destroyBtn.addEventListener("click", destroyBoxes);
