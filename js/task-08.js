@@ -10,8 +10,8 @@ const onSubmitFormClick = (event) => {
     return alert("Please fill in all fields!");
   } else {
     const formDataOdject = {
-      email: email,
-      password: password,
+      email,
+      password,
     };
     console.log(formDataOdject);
     form.reset();
