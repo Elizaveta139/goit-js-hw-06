@@ -11,6 +11,7 @@ const destroyBtn = document.querySelector("button[data-destroy]");
 const boxesEl = document.querySelector("#boxes");
 
 const onButtonCreateClick = () => {
+  boxesEl.innerHTML = "";
   // const amountEl = numberEl.value;
   createBoxes(numberEl.value);
 };
